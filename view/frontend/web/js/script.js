@@ -317,7 +317,7 @@ define([
             // always take the last matching item
             var next_url = $(this.nextSelector, container).last().attr('href');
             if(typeof(next_url) != 'undefined') {
-                next_url += '&ajaxscroll=1';
+                next_url += '?ajaxscroll=1';
             } else {
                 next_url = '';
             }
@@ -817,7 +817,7 @@ var IASHistoryExtension = function (options) {
         // always take the last matching item
         var prev_url = jQuery(this.prevSelector, container).last().attr('href');
         if(typeof(prev_url) != 'undefined') {
-            prev_url += '&ajaxscroll=1';
+            prev_url += '?ajaxscroll=1';
         } else {
             prev_url = '';
         }

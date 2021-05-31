@@ -230,7 +230,7 @@ var IASHistoryExtension = function (options) {
         // always take the last matching item
         var prev_url = jQuery(this.prevSelector, container).last().attr('href');
         if(typeof(prev_url) != 'undefined') {
-            prev_url += '&ajaxscroll=1';
+            prev_url += '?ajaxscroll=1';
         } else {
             prev_url = '';
         }
